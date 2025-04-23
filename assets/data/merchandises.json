@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Python Togo T-Shirt",
+        "description": "Proudly represent the Python Togo community with our official t-shirt. Made from high-quality cotton.",
+        "price": 3500,
+        "originalPrice": 5000,
+        "images": [
+            "assets/images/swags/tshirt.png",
+            "assets/images/swags/tshirt1.png",
+            "assets/images/swags/tshirt2.png",
+            "assets/images/swags/tshirt3.png",
+            "assets/images/swags/tshirt6.png",
+            "assets/images/swags/tshirt7.png",
+            "assets/images/swags/tshirt4.png",
+            "assets/images/swags/tshirt5.png"
+        ]
+    },
+    {
+        "name": "Python Togo Travel Mugs & Tumblers",
+        "description": "This tumbler boasts a large capacity and an ergonomic handle for a comfortable hold.",
+        "price": 2500,
+        "originalPrice": 5000,
+        "images": [
+            "assets/images/swags/bootle.png",
+            "assets/images/swags/bootle1.png",
+            "assets/images/swags/bootle2.png",
+            "assets/images/swags/bootle3.png",
+            "assets/images/swags/bootle4.png"
+        ]
+    },
+    {
+        "name": "Python Togo Hoodie",
+        "description": "Stay warm with our Python Togo hoodie. Perfect for coding nights and meetups.",
+        "price": 7500,
+        "originalPrice": 9000,
+        "images": [
+            "assets/images/swags/hoodie.png",
+            "assets/images/swags/hoodie1.png",
+            "assets/images/swags/hoodie2.png",
+            "assets/images/swags/hoodie7.png",
+            "assets/images/swags/hoodie4.png",
+            "assets/images/swags/hoodie5.png",
+            "assets/images/swags/hoodie6.png"
+        ]
+    },
+    {
+        "name": "Python Togo Cap",
+        "description": "Complete your tech look with our exclusive Python Togo cap. Adjustable and comfortable.",
+        "price": 2500,
+        "originalPrice": 3500,
+        "images": [
+            "assets/images/swags/cap.png",
+            "assets/images/swags/cap1.png",
+            "assets/images/swags/cap2.png",
+            "assets/images/swags/cap3.png",
+            "assets/images/swags/cap4.png",
+            "assets/images/swags/cap5.png",
+            "assets/images/swags/cap6.png",
+            "assets/images/swags/cap7.png"
+        ]
+    },
+    {
+        "name": "Python Togo Stickers",
+        "description": "Decorate your laptop, phone, and more with our Python Togo stickers. Durable and waterproof.",
+        "price": 500,
+        "originalPrice": 1000,
+        "images": [
+            "assets/images/swags/stickers.png",
+            "assets/images/swags/stickers1.png",
+            "assets/images/swags/stickers2.png"
+        ]
+    }
+]

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Python Togo is a community of Python developers in Togo. We are a community of developers, programmers, and tech enthusiasts who are passionate about Python programming language.">
+    <meta name="keywords"
+        content="Python Togo Society, Togo Tech, Togo Code, Tdev, Hyver, Tech Communities Day, Python, Togo, Python Togo, PyDay Togo 2024, PyDay Togo, PyCon Togo, Pycon Us, pycon, Pycon Africa, Python programming, Python programming language, Python developers, Python community">
+    <meta name="author" content="Python Togo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <title>Python Togo | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/getinvolve.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/initiatives.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <style>
+        /* Hide all language elements by default */
+        [data-lang] {
+            display: none;
+        }
+
+        /* Show only elements matching the selected language */
+        [data-lang="en"] {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+        <div class="logo">
+            <a href="index.html"><img
+                    src="https://res.cloudinary.com/dvg7vky5o/image/upload/v1744088130/pytogo_odrcr9.png"
+                    alt="Python Togo Logo"></a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">
+                        <span data-lang="en">Home</span>
+                        <span data-lang="fr">Accueil</span>
+                        <span data-lang="tg">Aƒe</span>
+                    </a></li>
+                <li><a href="#story">
+                        <span data-lang="en">Our Story</span>
+                        <span data-lang="fr">Notre Histoire</span>
+                        <span data-lang="tg">Míaƒe Ŋutinya</span>
+                    </a></li>
+                <li><a href="#involve">
+                        <span data-lang="en">Get Involved</span>
+                        <span data-lang="fr">S'impliquer</span>
+                        <span data-lang="tg">Kpɔ Gome</span>
+                    </a></li>
+                <li><a href="#initiatives">
+                        <span data-lang="en">Our Programs</span>
+                        <span data-lang="fr">Nos Programmes</span>
+                        <span data-lang="tg">Míaƒe Ðoɖowo</span>
+                    </a></li>
+                <li><a href="coc.html">
+                        <span data-lang="en">COC</span>
+                        <span data-lang="fr">COC</span>
+                        <span data-lang="tg">COC</span>
+                    </a></li>
+                <li><a href="gallery.html">
+                        <span data-lang="en">Gallery</span>
+                        <span data-lang="fr">Galerie</span>
+                        <span data-lang="tg">Fotowo</span>
+                    </a></li>
+                <li><a href="events.html">
+                        <span data-lang="en">Events</span>
+                        <span data-lang="fr">Événements</span>
+                        <span data-lang="tg">Wɔnawo</span>
+                    </a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta">
+            <select name="language" id="language-selector" onchange="changeLanguage(this.value)">
+                <option value="en">🇺🇸 EN</option>
+                <option value="fr">🇫🇷 FR</option>
+                <option value="tg">🇹🇬 TG</option>
+            </select>
+            <a href="#shop" class="cta-button btn-swag">
+                <span data-lang="en">Shop Swag</span>
+                <span data-lang="fr">Boutique</span>
+                <span data-lang="tg">Fiadzraƒe</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-slider">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span data-lang="en">Empowering Python Developers</span>
+                        <span data-lang="fr">Autonomiser les Développeurs Python</span>
+                        <span data-lang="tg">Python Ŋlɔlawo ƒe Ŋusẽdodo</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span data-lang="en">Join a thriving community of Python enthusiasts in Togo, learn,
+                            collaborate, and grow your skills.</span>
+                        <span data-lang="fr">Rejoignez une communauté florissante d'enthousiastes Python au Togo,
+                            apprenez, collaborez et développez vos compétences.</span>
+                        <span data-lang="tg">Kpɔ gome le Python lɔlawo ƒe habɔbɔ si le tsitsim le Togo, srɔ̃ nu, wɔ dɔ
+                            kple amehawo eye nàdo wò ŋutetewo ɖe ŋgɔ.</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#involve" class="btn btn-primary">
+                            <span data-lang="en">Get Involved</span>
+                            <span data-lang="fr">S'impliquer</span>
+                            <span data-lang="tg">Kpɔ Gome</span>
+                        </a>
+                        <a href="#story" class="btn btn-secondary">
+                            <span data-lang="en">Learn More</span>
+                            <span data-lang="fr">En Savoir Plus</span>
+                            <span data-lang="tg">Srɔ̃ Nu Geɖe</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slider Section -->
+            <section class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="/api/placeholder/1200/600" alt="Python Togo Community">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-nav prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </div>
+
+                <div class="slider-nav next">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </section>
+        </div>
+
+        <!-- Our Story Section -->
+        <section class="who-we-are" id="story">
+            <div class="who-we-are-container">
+                <div class="left-column">
+                    <span class="tag">
+                        <span data-lang="en">Our story</span>
+                        <span data-lang="fr">Notre histoire</span>
+                        <span data-lang="tg">Míaƒe Ŋutinya</span>
+                    </span>
+                    <h2>
+                        <span data-lang="en">Who we are</span>
+                        <span data-lang="fr">Qui sommes-nous</span>
+                        <span data-lang="tg">Ame kawo míenye</span>
+                    </h2>
+                </div>
+                <div class="right-column">
+                    <p data-lang="en">Python Togo is a dynamic community dedicated to fostering Python development in
+                        Togo. We provide opportunities for networking, mentorship, and hands-on learning for developers
+                        of all levels.</p>
+                    <p data-lang="fr">Python Togo est une communauté dynamique dédiée à promouvoir le développement
+                        Python au Togo. Nous offrons des opportunités de réseautage, de mentorat et d'apprentissage
+                        pratique pour les développeurs de tous niveaux.</p>
+                    <p data-lang="tg">Python Togo nye habɔbɔ gbagbe si ɖe adzɔgbe na Python ƒe ŋgɔyiyi le Togo. Míenaa
+                        mɔnukpɔkpɔwo na kadodo, ŋkuwɔwɔ kple nusɔsrɔ̃ si ŋu woada asi ɖo na ŋlɔlawo katã.</p>
+                </div>
+            </div>
+            <img src="https://res.cloudinary.com/dvg7vky5o/image/upload/v1744070811/groupe_picture_accra_rudcom.jpg"
+                alt="Python Togo Community" class="community-image">
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="partners-title">
+                <span data-lang="en">Our Partners</span>
+                <span data-lang="fr">Nos Partenaires</span>
+                <span data-lang="tg">Míaƒe Hadɔwɔhatiwo</span>
+            </div>
+            <div class="partners-logos">
+                <img src="/api/placeholder/200/100" alt="Partner Logo" class="partner-logo">
+                <img src="/api/placeholder/200/100" alt="Partner Logo" class="partner-logo">
+                <img src="/api/placeholder/200/100" alt="Partner Logo" class="partner-logo">
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="team-title-container">
+                <div class="tag">
+                    <span data-lang="en">The winning Team</span>
+                    <span data-lang="fr">L'équipe gagnante</span>
+                    <span data-lang="tg">Dɔwɔha si ɖua dzi</span>
+                </div>
+                <h1 class="team-title">
+                    <span data-lang="en">The Spirits Behind Python Togo</span>
+                    <span data-lang="fr">Les Esprits Derrière Python Togo</span>
+                    <span data-lang="tg">Gbɔgbɔ Siwo Le Python Togo Megbe</span>
+                </h1>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">John Doe</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Community Lead</span>
+                            <span data-lang="fr">Chef de Communauté</span>
+                            <span data-lang="tg">Habɔbɔ Ƒe Tatɔ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Jane Smith</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Technical Advisor</span>
+                            <span data-lang="fr">Conseiller Technique</span>
+                            <span data-lang="tg">Technike Ŋu Aɖaŋuɖola</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Kofi Mensah</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Event Coordinator</span>
+                            <span data-lang="fr">Coordinateur d'Événements</span>
+                            <span data-lang="tg">Wɔnawo Ƒe Dzikpɔla</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved Section -->
+        <section class="community-section-container" id="involve">
+            <div class="community-section">
+                <div class="community-content">
+                    <div class="get-involved-tag">
+                        <span data-lang="en">Get Involved</span>
+                        <span data-lang="fr">S'impliquer</span>
+                        <span data-lang="tg">Kpɔ Gome</span>
+                    </div>
+                    <h1 class="community-title">
+                        <span data-lang="en">Whether you're a beginner or an expert, there's a place for you in Python
+                            Togo</span>
+                        <span data-lang="fr">Que vous soyez débutant ou expert, il y a une place pour vous dans Python
+                            Togo</span>
+                        <span data-lang="tg">Ne ènye yeyeme alo aɖaŋuɖola o, teƒe aɖe li na wò le Python Togo me</span>
+                    </h1>
+                    <button class="contact-button">
+                        <span data-lang="en">Contact Us</span>
+                        <span data-lang="fr">Contactez-nous</span>
+                        <span data-lang="tg">Ƒo Ka Na Mí</span>
+                    </button>
+                </div>
+
+                <div class="community-options">
+                    <div class="option">
+                        <div class="option-icon">
+                            <img src="/api/placeholder/64/64" alt="Meetups Icon">
+                        </div>
+                        <div class="option-content">
+                            <h3>
+                                <span data-lang="en">Attend Meetups</span>
+                                <span data-lang="fr">Assister aux Réunions</span>
+                                <span data-lang="tg">Va Takpewo</span>
+                            </h3>
+                            <p>
+                                <span data-lang="en">Connect with like-minded developers.</span>
+                                <span data-lang="fr">Connectez-vous avec des développeurs partageant les mêmes
+                                    idées.</span>
+                                <span data-lang="tg">De ka ŋlɔla bubuwo siwo ƒe susuwo sɔ kple tɔwò.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="option">
+                        <div class="option-icon">
+                            <img src="/api/placeholder/64/64" alt="Mentor Icon">
+                        </div>
+                        <div class="option-content">
+                            <h3>
+                                <span data-lang="en">Become a Mentor</span>
+                                <span data-lang="fr">Devenir Mentor</span>
+                                <span data-lang="tg">Zu Afiakala</span>
+                            </h3>
+                            <p>
+                                <span data-lang="en">Share your knowledge and help others.</span>
+                                <span data-lang="fr">Partagez vos connaissances et aidez les autres.</span>
+                                <span data-lang="tg">Ma wò nunyanya eye nàkpe ɖe amebubuwo ŋu.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="option">
+                        <div class="option-icon">
+                            <img src="/api/placeholder/64/64" alt="Open Source Icon">
+                        </div>
+                        <div class="option-content">
+                            <h3>
+                                <span data-lang="en">Contribute to Open Source</span>
+                                <span data-lang="fr">Contribuer à l'Open Source</span>
+                                <span data-lang="tg">Do Ŋusẽ Open Source</span>
+                            </h3>
+                            <p>
+                                <span data-lang="en">Collaborate on projects.</span>
+                                <span data-lang="fr">Collaborez sur des projets.</span>
+                                <span data-lang="tg">Wɔ dɔ le dɔwɔɖewo ŋu.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Programs Section -->
+        <section class="programs-section" id="initiatives">
+            <div class="programs-tag">
+                <span data-lang="en">Our Programs</span>
+                <span data-lang="fr">Nos Programmes</span>
+                <span data-lang="tg">Míaƒe Ðoɖowo</span>
+            </div>
+            <h1 class="programs-title">
+                <span data-lang="en">We offer a variety of programs to help you grow your Python skills and connect with
+                    others.</span>
+                <span data-lang="fr">Nous offrons une variété de programmes pour vous aider à développer vos compétences
+                    Python et à vous connecter avec d'autres.</span>
+                <span data-lang="tg">Míenaa ɖoɖo vovovo siwo akpe ɖe ŋuwò be nàdo wò Python ŋutetewo ɖe ŋgɔ eye nàde ka
+                    amebubuwo.</span>
+            </h1>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-illustration">
+                        <img src="/api/placeholder/300/200" alt="Workshops & Training Illustration">
+                    </div>
+                    <h3 class="program-title">
+                        <span data-lang="en">Workshops & Training</span>
+                        <span data-lang="fr">Ateliers & Formation</span>
+                        <span data-lang="tg">Dɔwɔƒewo & Hehenana</span>
+                    </h3>
+                    <p class="program-description">
+                        <span data-lang="en">Hands-on coding sessions and bootcamps.</span>
+                        <span data-lang="fr">Sessions de codage pratiques et bootcamps.</span>
+                        <span data-lang="tg">Coding takpewo kple bootcamps.</span>
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-illustration">
+                        <img src="/api/placeholder/300/200" alt="Hackathons Illustration">
+                    </div>
+                    <h3 class="program-title">
+                        <span data-lang="en">Hackathons</span>
+                        <span data-lang="fr">Hackathons</span>
+                        <span data-lang="tg">Hackathons</span>
+                    </h3>
+                    <p class="program-description">
+                        <span data-lang="en">Solve real-world problems with Python.</span>
+                        <span data-lang="fr">Résolvez des problèmes réels avec Python.</span>
+                        <span data-lang="tg">Ɖɔ xexeame me nyawo ɖo kple Python.</span>
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-illustration">
+                        <img src="/api/placeholder/300/200" alt="Mentorship Programs Illustration">
+                    </div>
+                    <h3 class="program-title">
+                        <span data-lang="en">Mentorship Programs</span>
+                        <span data-lang="fr">Programmes de Mentorat</span>
+                        <span data-lang="tg">Afiakaladɔwo</span>
+                    </h3>
+                    <p class="program-description">
+                        <span data-lang="en">Get guidance from industry experts.</span>
+                        <span data-lang="fr">Obtenez des conseils d'experts de l'industrie.</span>
+                        <span data-lang="tg">Xɔ mɔfiame tso dɔwɔƒe aɖaŋuɖolawo gbɔ.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="shop" id="shop">
+            <div class="page-header">
+                <h1>
+                    <span data-lang="en">Represent Python Togo</span>
+                    <span data-lang="fr">Représentez Python Togo</span>
+                    <span data-lang="tg">Ɖɔli Python Togo</span>
+                </h1>
+                <p>
+                    <span data-lang="en">Support our community by grabbing official Python Togo merchandise. Every
+                        purchase helps us grow!</span>
+                    <span data-lang="fr">Soutenez notre communauté en achetant des produits officiels Python Togo.
+                        Chaque achat nous aide à grandir!</span>
+                    <span data-lang="tg">Do míaƒe habɔbɔ la ɖe ŋgɔ to Python Togo ƒe nunɔamesiwo ƒeƒle me. Nunana ɖe sia
+                        ɖe kpena ɖe míaƒe tsitsi ŋu!</span>
+                </p>
+            </div>
+
+            <div class="product-container">
+                <div class="product-image">
+                    <div id="product-images">
+                        <img src="/api/placeholder/400/400" alt="Python Togo T-shirt">
+                    </div>
+                    <div class="slider-dots" id="slider-dots"></div>
+                </div>
+
+                <div class="product-details">
+                    <h2 class="product-title" id="product-title">
+                        <span data-lang="en">Python Togo T-shirt</span>
+                        <span data-lang="fr">T-shirt Python Togo</span>
+                        <span data-lang="tg">Python Togo T-shirt</span>
+                    </h2>
+                    <p class="product-description" id="product-description">
+                        <span data-lang="en">Show your love for Python with our official community t-shirt.</span>
+                        <span data-lang="fr">Montrez votre amour pour Python avec notre t-shirt officiel de la
+                            communauté.</span>
+                        <span data-lang="tg">Fia wò lɔlɔ̃ na Python kple míaƒe habɔbɔ la ƒe t-shirt vavãtɔ.</span>
+                    </p>
+                    <div class="product-price">
+                        <span id="product-price">$25.00</span>
+                        <span class="original-price" id="original-price">$30.00</span>
+                    </div>
+                    <button class="buy-button" id="buy-button">
+                        <span data-lang="en">Buy Swag</span>
+                        <span data-lang="fr">Acheter</span>
+                        <span data-lang="tg">Ƒle Nunana</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="navigation-arrows">
+                <button class="navigation-arrow prev">←</button>
+                <button class="navigation-arrow next">→</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img
+                        src="https://res.cloudinary.com/dvg7vky5o/image/upload/v1744088130/pytogo_odrcr9.png"
+                        alt="Python Togo Logo"></a>
+            </div>
+
+            <!-- Navigation -->
+            <ul class="nav-links footer-nav">
+                <li><a href="index.html">
+                        <span data-lang="en">Home</span>
+                        <span data-lang="fr">Accueil</span>
+                        <span data-lang="tg">Aƒe</span>
+                    </a></li>
+                <li><a href="#story">
+                        <span data-lang="en">Our Story</span>
+                        <span data-lang="fr">Notre Histoire</span>
+                        <span data-lang="tg">Míaƒe Ŋutinya</span>
+                    </a></li>
+                <li><a href="#involve">
+                        <span data-lang="en">Get Involved</span>
+                        <span data-lang="fr">S'impliquer</span>
+                        <span data-lang="tg">Kpɔ Gome</span>
+                    </a></li>
+                <li><a href="#initiatives">
+                        <span data-lang="en">Our Programs</span>
+                        <span data-lang="fr">Nos Programmes</span>
+                        <span data-lang="tg">Míaƒe Ðoɖowo</span>
+                    </a></li>
+                <li><a href="coc.html">
+                        <span data-lang="en">COC</span>
+                        <span data-lang="fr">COC</span>
+                        <span data-lang="tg">COC</span>
+                    </a></li>
+                <li><a href="gallery.html">
+                        <span data-lang="en">Gallery</span>
+                        <span data-lang="fr">Galerie</span>
+                        <span data-lang="tg">Fotowo</span>
+                    </a></li>
+                <li><a href="events.html">
+                        <span data-lang="en">Events</span>
+                        <span data-lang="fr">Événements</span>
+                        <span data-lang="tg">Wɔnawo</span>
+                    </a></li>
+            </ul>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://github.com/pytogo-org" aria-label="Github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
+                        <path
+                            d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
+                    </svg>
+                </a>
+
+                <a href="https://x.com/Python_Togo" aria-label="Twitter/X">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/python-togo/" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@PythonTogo" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="copyright">
+            <span data-lang="en">&copy; 2025 Python Togo. All rights reserved.</span>
+            <span data-lang="fr">&copy; 2025 Python Togo. Tous droits réservés.</span>
+            <span data-lang="tg">&copy; 2025 Python Togo. Gomekpɔkpɔ ɖe sia ɖe le mía si.</span>
+        </div>
+    </footer>
+    <script>
+       
+    </script>
+</body>
+
+</html>
