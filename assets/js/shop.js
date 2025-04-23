@@ -27,7 +27,9 @@ class ProductStore {
     async fetchProducts() {
         try {
 
-            const response = await fetch('/assets/data/merchandises.json');
+            // const response = await fetch('/assets/data/merchandises.json');
+            const response = await fetch('https://pytogo-org.github.io/pytogo/assets/data/merchandises.json');
+
             if (!response.ok) {
                 throw new Error('Error fetching products');
             }
