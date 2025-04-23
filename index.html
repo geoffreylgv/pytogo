@@ -18,21 +18,9 @@
     <link rel="stylesheet" href="assets/css/shop.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/getinvolve.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/events.css">
     <link rel="stylesheet" href="assets/css/initiatives.css">
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
-    <style>
-        /* Hide all language elements by default */
-        [data-lang] {
-            display: none;
-        }
-
-        /* Show only elements matching the selected language */
-        [data-lang="en"] {
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
@@ -41,14 +29,12 @@
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
 
         <div class="logo">
-            <a href="index.html"><img
-                    src="https://res.cloudinary.com/dvg7vky5o/image/upload/v1744088130/pytogo_odrcr9.png"
-                    alt="Python Togo Logo"></a>
+            <a href="home.html"><img src="assets/images/logo.png" alt="Python Togo Logo"></a>
         </div>
 
         <nav class="nav">
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">
+                <li><a href="home.html">
                         <span data-lang="en">Home</span>
                         <span data-lang="fr">Accueil</span>
                         <span data-lang="tg">Aƒe</span>
@@ -68,16 +54,16 @@
                         <span data-lang="fr">Nos Programmes</span>
                         <span data-lang="tg">Míaƒe Ðoɖowo</span>
                     </a></li>
-                <li><a href="coc.html">
-                        <span data-lang="en">COC</span>
-                        <span data-lang="fr">COC</span>
-                        <span data-lang="tg">COC</span>
+                <li><a href="CoC.html">
+                        <span data-lang="en">CoC</span>
+                        <span data-lang="fr">CoC</span>
+                        <span data-lang="tg">CoC</span>
                     </a></li>
-                <li><a href="gallery.html">
+                <!-- <li><a href="gallery.html">
                         <span data-lang="en">Gallery</span>
                         <span data-lang="fr">Galerie</span>
                         <span data-lang="tg">Fotowo</span>
-                    </a></li>
+                    </a></li> -->
                 <li><a href="events.html">
                         <span data-lang="en">Events</span>
                         <span data-lang="fr">Événements</span>
@@ -92,9 +78,9 @@
                 <option value="tg">🇹🇬 TG</option>
             </select>
             <a href="#shop" class="cta-button btn-swag">
-                <span data-lang="en">Shop Swag</span>
-                <span data-lang="fr">Boutique</span>
-                <span data-lang="tg">Fiadzraƒe</span>
+                <span data-lang="en">PyCon Togo 2025</span>
+                <span data-lang="fr">PyCon Togo 2025</span>
+                <span data-lang="tg">PyCon Togo 2025</span>
             </a>
         </div>
     </header>
@@ -124,7 +110,7 @@
                             <span data-lang="fr">S'impliquer</span>
                             <span data-lang="tg">Kpɔ Gome</span>
                         </a>
-                        <a href="#story" class="btn btn-secondary">
+                        <a href="mission.html" class="btn btn-secondary">
                             <span data-lang="en">Learn More</span>
                             <span data-lang="fr">En Savoir Plus</span>
                             <span data-lang="tg">Srɔ̃ Nu Geɖe</span>
@@ -136,11 +122,19 @@
             <!-- Slider Section -->
             <section class="slider-container">
                 <div class="slider-wrapper">
+
                     <div class="slider">
                         <div class="slide">
-                            <img src="/api/placeholder/1200/600" alt="Python Togo Community">
+                            <img src="assets/images/pytg/hero.jpg" alt="Python Togo Community">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/pytg/pycon.jpeg" alt="Python Togo Community">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/pytg/groupe_picture_accra.jpeg" alt="Python Togo Community">
                         </div>
                     </div>
+
                 </div>
 
                 <div class="slider-nav prev">
@@ -219,49 +213,212 @@
             </div>
 
             <div class="team-grid">
+                <!-- Wachiou BOURAIMA -->
                 <div class="team-member">
                     <div class="team-member-image">
-                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                        <img src="assets/images/team/wass.jpeg" alt="Wachiou BOURAIMA">
                     </div>
                     <div class="team-member-info">
-                        <div class="team-member-name">John Doe</div>
+                        <div class="team-member-name">Wachiou BOURAIMA</div>
                         <div class="team-member-position">
-                            <span data-lang="en">Community Lead</span>
-                            <span data-lang="fr">Chef de Communauté</span>
-                            <span data-lang="tg">Habɔbɔ Ƒe Tatɔ</span>
+                            <span data-lang="en">President | Co-founder</span>
+                            <span data-lang="fr">Président | Co-fondateur</span>
+                            <span data-lang="tg">Tatɔ | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agnilonda PAKOU -->
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/pakou.jpg" alt="Agnilonda PAKOU">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Agnilonda PAKOU</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Vice-President | Co-founder</span>
+                            <span data-lang="fr">Vice-Président | Co-fondateur</span>
+                            <span data-lang="tg">Tatɔ Teƒenɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/goeffrey.jpeg" alt="Geoffrey LOGOVI">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Geoffrey LOGOVI</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Executive Director | Co-founder</span>
+                            <span data-lang="fr">Directeur Exécutif | Co-fondateur</span>
+                            <span data-lang="tg">Dɔwɔwɔwo Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parfait TOKE -->
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/parfait.jpg" alt="Parfait TOKE">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Parfait TOKE</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">General Councillor | Co-founder</span>
+                            <span data-lang="fr">Conseiller Général | Co-fondateur</span>
+                            <span data-lang="tg">Aɖaŋuɖola Gã | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/labore.JPG" alt="Laboré kodjo AGBETSIASSI">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Laboré kodjo AGBETSIASSI</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Education, Training and Mentoring Manager | Co-founder</span>
+                            <span data-lang="fr">Responsable Éducation, Formation et Mentorat | Co-fondateur</span>
+                            <span data-lang="tg">Hehe, Nufiafia kple Ŋkuwɔwɔ Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/samadou.jpeg" alt="Samadou OURO-AGOROUKO">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Samadou OURO-AGOROUKO</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Education, Training and Mentoring Manager | Co-founder</span>
+                            <span data-lang="fr">Responsable Éducation, Formation et Mentorat | Co-fondateur</span>
+                            <span data-lang="tg">Hehe, Nufiafia kple Ŋkuwɔwɔ Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/irene.jpeg" alt="Irène AMEDJI">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Irène AMEDJI</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Head of Communications and Design | Co-founder</span>
+                            <span data-lang="fr">Responsable Communications et Design | Co-fondatrice</span>
+                            <span data-lang="tg">Kakaɖedzi kple Ɖoɖowɔwɔ Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/yves.jpeg" alt="Yves HOUANGASSI">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Yves HOUANGASSI</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Head of Communications and Design | Co-founder</span>
+                            <span data-lang="fr">Responsable Communications et Design | Co-fondateur</span>
+                            <span data-lang="tg">Kakaɖedzi kple Ɖoɖowɔwɔ Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/samira.jpeg" alt="Samira AMADOU">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Samira AMADOU</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Partnerships and External Relations Advisor | Co-founder</span>
+                            <span data-lang="fr">Conseillère Partenariats et Relations Externes | Co-fondatrice</span>
+                            <span data-lang="tg">Kadodo kple Gota Ƒoƒo Ŋuti Aɖaŋuɖola | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/emmanuel.jpeg" alt="Emmanuel AMELA">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Emmanuel AMELA</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Deputy Secretary | Co-founder</span>
+                            <span data-lang="fr">Secrétaire Adjoint | Co-fondateur</span>
+                            <span data-lang="tg">Nuŋlɔla Teƒenɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/happy.jpeg" alt="Medede BIDASSA">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Medede BIDASSA</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Treasurer | Co-founder</span>
+                            <span data-lang="fr">Trésorier | Co-fondateur</span>
+                            <span data-lang="tg">Gaƒunyawo Dzikpɔla | Gɔmeɖoɖola</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="assets/images/team/waficah.jpg" alt="Waficah OLOSSOUMARE">
+                    </div>
+                    <div class="team-member-info">
+                        <div class="team-member-name">Waficah OLOSSOUMARE</div>
+                        <div class="team-member-position">
+                            <span data-lang="en">Deputy Treasurer | Co-founder</span>
+                            <span data-lang="fr">Trésorière Adjointe | Co-fondatrice</span>
+                            <span data-lang="tg">Gaƒunyawo Dzikpɔla Teƒenɔla | Gɔmeɖoɖola</span>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="team-member-image">
-                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                        <img src="assets/images/team/kof.jpeg" alt=" Koffi DJAKPA
+">
                     </div>
                     <div class="team-member-info">
-                        <div class="team-member-name">Jane Smith</div>
+                        <div class="team-member-name">Koffi DJAKPA
+                        </div>
                         <div class="team-member-position">
-                            <span data-lang="en">Technical Advisor</span>
-                            <span data-lang="fr">Conseiller Technique</span>
-                            <span data-lang="tg">Technike Ŋu Aɖaŋuɖola</span>
+                            <span data-lang="en">Education, Training and Mentoring Manager | Co-founder</span>
+                            <span data-lang="fr">Responsable Éducation, Formation et Mentorat | Co-fondateur</span>
+                            <span data-lang="tg">Hehe, Nufiafia kple Ŋkuwɔwɔ Dzikpɔla | Gɔmeɖoɖola</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="team-member">
                     <div class="team-member-image">
-                        <img src="/api/placeholder/300/300" alt="Team Member Photo">
+                        <img src="assets/images/team/akinwumi.JPG" alt="Akinwumi OGUNDIPE">
                     </div>
                     <div class="team-member-info">
-                        <div class="team-member-name">Kofi Mensah</div>
+                        <div class="team-member-name">Akinwumi OGUNDIPE</div>
                         <div class="team-member-position">
-                            <span data-lang="en">Event Coordinator</span>
-                            <span data-lang="fr">Coordinateur d'Événements</span>
-                            <span data-lang="tg">Wɔnawo Ƒe Dzikpɔla</span>
+                            <span data-lang="en">Product Designer | Core Contributor</span>
+                            <span data-lang="fr">Designer Produit | Contributeur Principal</span>
+                            <span data-lang="tg">Nuwɔwɔwo Ɖolala | Kpekpeɖeŋutɔ Vevitɔ</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Get Involved Section -->
         <section class="community-section-container" id="involve">
             <div class="community-section">
                 <div class="community-content">
@@ -287,7 +444,7 @@
                 <div class="community-options">
                     <div class="option">
                         <div class="option-icon">
-                            <img src="/api/placeholder/64/64" alt="Meetups Icon">
+                            <img src="assets/images/python.svg" alt="Meetups Icon">
                         </div>
                         <div class="option-content">
                             <h3>
@@ -306,7 +463,7 @@
 
                     <div class="option">
                         <div class="option-icon">
-                            <img src="/api/placeholder/64/64" alt="Mentor Icon">
+                            <img src="assets/images/python.svg" alt="Mentor Icon">
                         </div>
                         <div class="option-content">
                             <h3>
@@ -324,7 +481,7 @@
 
                     <div class="option">
                         <div class="option-icon">
-                            <img src="/api/placeholder/64/64" alt="Open Source Icon">
+                            <img src="assets/images/python.svg" alt="Open Source Icon">
                         </div>
                         <div class="option-content">
                             <h3>
@@ -343,7 +500,6 @@
             </div>
         </section>
 
-        <!-- Our Programs Section -->
         <section class="programs-section" id="initiatives">
             <div class="programs-tag">
                 <span data-lang="en">Our Programs</span>
@@ -362,7 +518,7 @@
             <div class="programs-grid">
                 <div class="program-card">
                     <div class="program-illustration">
-                        <img src="/api/placeholder/300/200" alt="Workshops & Training Illustration">
+                        <img src="assets/images/workshops_training.png" alt="Workshops & Training Illustration">
                     </div>
                     <h3 class="program-title">
                         <span data-lang="en">Workshops & Training</span>
@@ -378,7 +534,7 @@
 
                 <div class="program-card">
                     <div class="program-illustration">
-                        <img src="/api/placeholder/300/200" alt="Hackathons Illustration">
+                        <img src="assets/images/hackathons.png" alt="Hackathons Illustration">
                     </div>
                     <h3 class="program-title">
                         <span data-lang="en">Hackathons</span>
@@ -394,7 +550,7 @@
 
                 <div class="program-card">
                     <div class="program-illustration">
-                        <img src="/api/placeholder/300/200" alt="Mentorship Programs Illustration">
+                        <img src="assets/images/mentorship_programs.png" alt="Mentorship Programs Illustration">
                     </div>
                     <h3 class="program-title">
                         <span data-lang="en">Mentorship Programs</span>
@@ -410,7 +566,6 @@
             </div>
         </section>
 
-        <!-- Shop Section -->
         <section class="shop" id="shop">
             <div class="page-header">
                 <h1>
@@ -467,19 +622,14 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img
-                        src="https://res.cloudinary.com/dvg7vky5o/image/upload/v1744088130/pytogo_odrcr9.png"
-                        alt="Python Togo Logo"></a>
+                <a href="home.html"><img src="assets/images/logo.png" alt="Python Togo Logo"></a>
             </div>
 
-            <!-- Navigation -->
             <ul class="nav-links footer-nav">
-                <li><a href="index.html">
+                <li><a href="home.html">
                         <span data-lang="en">Home</span>
                         <span data-lang="fr">Accueil</span>
                         <span data-lang="tg">Aƒe</span>
@@ -499,16 +649,16 @@
                         <span data-lang="fr">Nos Programmes</span>
                         <span data-lang="tg">Míaƒe Ðoɖowo</span>
                     </a></li>
-                <li><a href="coc.html">
-                        <span data-lang="en">COC</span>
-                        <span data-lang="fr">COC</span>
-                        <span data-lang="tg">COC</span>
+                <li><a href="CoC.html">
+                        <span data-lang="en">CoC</span>
+                        <span data-lang="fr">CoC</span>
+                        <span data-lang="tg">CoC</span>
                     </a></li>
-                <li><a href="gallery.html">
+                <!-- <li><a href="gallery.html">
                         <span data-lang="en">Gallery</span>
                         <span data-lang="fr">Galerie</span>
                         <span data-lang="tg">Fotowo</span>
-                    </a></li>
+                    </a></li> -->
                 <li><a href="events.html">
                         <span data-lang="en">Events</span>
                         <span data-lang="fr">Événements</span>
@@ -543,6 +693,7 @@
                             d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                     </svg>
                 </a>
+
             </div>
         </div>
 
@@ -554,9 +705,12 @@
             <span data-lang="tg">&copy; 2025 Python Togo. Gomekpɔkpɔ ɖe sia ɖe le mía si.</span>
         </div>
     </footer>
-    <script>
-       
-    </script>
+
+    <script src="assets/js/mobile.js"></script>
+    <script src="assets/js/slide.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/shop.js"></script>
+
 </body>
 
 </html>
