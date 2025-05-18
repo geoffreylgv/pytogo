@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadEvents() {
         try {
             const response = await fetch('https://pythontogo.onrender.com/api/events');
-
             eventsData = await response.json();
             console.log('Données reçues:', eventsData);
             renderEvents(eventsData);
@@ -65,61 +64,59 @@ document.addEventListener('DOMContentLoaded', () => {
         template.querySelector('.event-time').textContent = event.time;
         template.querySelector('.event-location').textContent = event.location;
         template.querySelector('.event-description').textContent = event.short_description;
+        template.querySelector('.register-btn').href = event.registration_link;
+        template.querySelector('.website').href = event.website;
 
-        const detailsBtn = template.querySelector('.event-details-btn');
-        detailsBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            openEventDetails(event.id);
-        });
+
 
         return template;
     }
 
-    async function openEventDetails(eventId) {
-        try {
-            const response = await fetch(`/api/events/${eventId}`);
-            const eventData = await response.json();
+    // async function openEventDetails(eventId) {
+    //     try {
+    //         const response = await fetch(`/api/events/${eventId}`);
+    //         const eventData = await response.json();
 
-            console.log('eventData:', eventData);
+    //         console.log('eventData:', eventData);
 
-            renderEventDetails(eventData);
+    //         renderEventDetails(eventData);
 
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+    //         modal.style.display = 'block';
+    //         document.body.style.overflow = 'hidden';
 
-        } catch (error) {
-            console.error('error while loading the events', error);
-            eventDetailContent.innerHTML = `<div class="error">An error occurred while loading event details.</div>`;
-        }
-    }
+    //     } catch (error) {
+    //         console.error('error while loading the events', error);
+    //         eventDetailContent.innerHTML = `<div class="error">An error occurred while loading event details.</div>`;
+    //     }
+    // }
 
-    function renderEventDetails(event) {
+    // function renderEventDetails(event) {
 
-        eventDetailContent.innerHTML = ``;
+    //     eventDetailContent.innerHTML = ``;
 
-        // Ajouter les écouteurs d'événements aux onglets
-        const tabs = eventDetailContent.querySelectorAll('.tab');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Retirer la classe active de tous les onglets
-                tabs.forEach(t => t.classList.remove('active'));
+    // Ajouter les écouteurs d'événements aux onglets
+    // const tabs = eventDetailContent.querySelectorAll('.tab');
+    // tabs.forEach(tab => {
+    //     tab.addEventListener('click', () => {
+    // Retirer la classe active de tous les onglets
+    // tabs.forEach(t => t.classList.remove('active'));
 
-                // Ajouter la classe active à l'onglet cliqué
-                tab.classList.add('active');
+    // Ajouter la classe active à l'onglet cliqué
+    // tab.classList.add('active');
 
-                // Retirer la classe active de tous les contenus d'onglet
-                const tabContents = eventDetailContent.querySelectorAll('.tab-content');
-                tabContents.forEach(content => content.classList.remove('active'));
+    // Retirer la classe active de tous les contenus d'onglet
+    // const tabContents = eventDetailContent.querySelectorAll('.tab-content');
+    // tabContents.forEach(content => content.classList.remove('active'));
 
-                // Ajouter la classe active au contenu d'onglet correspondant
-                const tabId = tab.getAttribute('data-tab');
-                const tabContent = eventDetailContent.querySelector(`#${tabId}`);
-                if (tabContent) {
-                    tabContent.classList.add('active');
-                }
-            });
-        });
-    }
+    // Ajouter la classe active au contenu d'onglet correspondant
+    //             const tabId = tab.getAttribute('data-tab');
+    //             const tabContent = eventDetailContent.querySelector(`#${tabId}`);
+    //             if (tabContent) {
+    //                 tabContent.classList.add('active');
+    //             }
+    //         });
+    //     });
+    // }
 
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
