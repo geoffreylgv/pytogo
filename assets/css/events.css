@@ -9,7 +9,12 @@
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+.event-container {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
 .event-section {
     max-width: 1200px;
     margin: 0 auto;
