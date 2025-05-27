@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadEvents() {
         try {
-            const response = await fetch('https://pythontogo.onrender.com/api/events');
+            const response = await fetch('https://pythontogo.vercel.app/api/events');
             eventsData = await response.json();
             console.log('Données reçues:', eventsData);
             renderEvents(eventsData);
